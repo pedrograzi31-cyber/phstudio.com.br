@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PH Studio — Design & Vídeo</title>
+<meta name="description" content="PH Studio — Design e produção de vídeos para destacar sua marca.">
+<style>
+:root{--bg:#08090d;--card:#11131a;--text:#f5f7fb;--muted:#a9afbd;--accent:#3b82f6;--line:#242832}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(8,9,13,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:25px;font-weight:900;letter-spacing:-1px}.logo span{color:var(--accent)}
+nav ul{display:flex;gap:26px;list-style:none;color:var(--muted);font-size:14px}
+nav a:hover{color:white}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:12px;font-weight:800;background:var(--accent);transition:.2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.btn.alt{background:transparent;border:1px solid var(--line)}
+.hero{padding:105px 0 90px;display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}
+.badge{display:inline-block;padding:7px 12px;border:1px solid #29364d;border-radius:99px;color:#9ec5ff;background:#0c1422;font-size:13px;margin-bottom:20px}
+h1{font-size:clamp(44px,7vw,76px);line-height:.98;letter-spacing:-4px;max-width:750px}
+h1 span{color:var(--accent)}
+.hero p{color:var(--muted);font-size:18px;max-width:600px;margin:25px 0 30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.visual{height:390px;border:1px solid var(--line);border-radius:28px;background:radial-gradient(circle at 65% 25%,#245aa0 0,#141a27 30%,#0d0f15 65%);display:grid;place-items:center;box-shadow:0 25px 80px #0008}
+.monogram{font-size:130px;font-weight:950;letter-spacing:-15px;text-shadow:0 20px 60px #000}
+section{padding:90px 0}
+.section-head{margin-bottom:35px}.eyebrow{color:var(--accent);font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:2px}
+h2{font-size:42px;letter-spacing:-2px;margin-top:7px}.sub{color:var(--muted);max-width:600px;margin-top:10px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;min-height:220px}
+.icon{font-size:28px;margin-bottom:20px}.card h3{font-size:20px;margin-bottom:8px}.card p{color:var(--muted);font-size:15px}
+.portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.work{height:250px;border-radius:20px;border:1px solid var(--line);padding:20px;display:flex;align-items:end;background:linear-gradient(135deg,#172033,#0d1016)}
+.work:nth-child(2){background:linear-gradient(135deg,#271b39,#101118)}.work:nth-child(3){background:linear-gradient(135deg,#18352f,#0e1313)}
+.work strong{font-size:20px}.work small{display:block;color:#aeb7c7}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px;align-items:center}
+.about-box{border:1px solid var(--line);border-radius:24px;padding:35px;background:var(--card)}
+.about p{color:var(--muted);margin-top:14px}
+.contact{background:linear-gradient(135deg,#0f1727,#0a0c11);border:1px solid var(--line);border-radius:28px;padding:55px}
+.contact h2{max-width:650px}.contact p{color:var(--muted);margin:12px 0 25px}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);display:flex;justify-content:space-between;gap:20px}
+.whatsapp{position:fixed;right:20px;bottom:20px;z-index:20;padding:15px 19px;border-radius:99px;background:#25D366;color:#07150b;font-weight:900;box-shadow:0 10px 30px #0008}
+@media(max-width:800px){nav ul{display:none}.hero,.about{grid-template-columns:1fr}.visual{height:280px}.grid,.portfolio{grid-template-columns:1fr}section{padding:65px 0}h2{font-size:34px}footer{flex-direction:column}.contact{padding:32px}}
+</style>
+</head>
+<body>
+<header><div class="container"><nav>
+<a class="logo" href="#">P<span>H</span></a>
+<ul><li><a href="#servicos">Serviços</a></li><li><a href="#portfolio">Portfólio</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#contato">Contato</a></li></ul>
+<a class="btn" href="https://wa.me/5511915287724?text=Olá%20PH!%20Quero%20fazer%20um%20orçamento." target="_blank">Falar no WhatsApp</a>
+</nav></div></header>
+
+<main>
+<section class="hero"><div>
+<div class="badge">PH STUDIO • DESIGN & VÍDEO</div>
+<h1>Design e vídeo para <span>destacar sua marca.</span></h1>
+<p>Criação de artes, identidade visual e produção de vídeos com um visual moderno, profissional e feito para chamar atenção.</p>
+<div class="actions"><a class="btn" href="#contato">Quero meu projeto</a><a class="btn alt" href="#portfolio">Ver trabalhos</a></div>
+</div><div class="visual"><div class="monogram">PH</div></div></section>
+
+<section id="servicos"><div class="container">
+<div class="section-head"><div class="eyebrow">O que eu faço</div><h2>Serviços</h2><p class="sub">Uma seleção inicial de serviços que você pode oferecer e ajustar conforme seu portfólio crescer.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">✦</div><h3>Design para redes</h3><p>Artes para Instagram, anúncios, stories, posts e materiais digitais com identidade visual.</p></div>
+<div class="card"><div class="icon">▶</div><h3>Produção de vídeos</h3><p>Edição de vídeos curtos, Reels, Shorts e conteúdos promocionais com ritmo e acabamento profissional.</p></div>
+<div class="card"><div class="icon">◈</div><h3>Identidade visual</h3><p>Logotipo, cores, tipografia e elementos visuais para construir uma presença marcante.</p></div>
+</div></div></section>
+
+<section id="portfolio"><div class="container">
+<div class="section-head"><div class="eyebrow">Projetos demonstrativos</div><h2>Portfólio</h2><p class="sub">Exemplos conceituais para apresentar o estilo do estúdio enquanto seu portfólio real é construído.</p></div>
+<div class="portfolio">
+<div class="work"><div><strong>Social Media</strong><small>Campanha visual</small></div></div>
+<div class="work"><div><strong>Video Motion</strong><small>Conteúdo promocional</small></div></div>
+<div class="work"><div><strong>Branding</strong><small>Identidade de marca</small></div></div>
+</div></div></section>
+
+<section id="sobre"><div class="container about">
+<div class="about-box"><div class="monogram" style="font-size:90px">PH</div></div>
+<div><div class="eyebrow">Sobre a PH</div><h2>Visual que faz sua marca ser lembrada.</h2><p>O PH Studio nasce com uma proposta simples: transformar ideias em peças visuais modernas e profissionais. O foco é design e produção de vídeos — sem prometer serviços que não fazem parte do seu trabalho.</p><p>Este texto pode ser substituído depois pela sua história, experiência e diferenciais.</p></div>
+</div></section>
+
+<section id="contato"><div class="container"><div class="contact">
+<div class="eyebrow">Vamos conversar</div><h2>Tem uma ideia? Vamos transformar em projeto.</h2><p>Entre em contato pelo WhatsApp e fale sobre o que você precisa.</p>
+<a class="btn" href="https://wa.me/5511915287724?text=Olá%20PH!%20Quero%20fazer%20um%20orçamento." target="_blank">Chamar no WhatsApp</a>
+</div></div></section>
+</main>
+
+<footer><div class="container" style="display:flex;justify-content:space-between;gap:20px;width:92%"><span>© 2026 PH Studio</span><span>WhatsApp: (11) 91528-7724</span></div></footer>
+<a class="whatsapp" href="https://wa.me/5511915287724?text=Olá%20PH!%20Quero%20fazer%20um%20orçamento." target="_blank">WhatsApp ↗</a>
+</body></html>
